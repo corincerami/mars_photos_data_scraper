@@ -1,0 +1,12 @@
+<p>
+  The Mars rover Curiosity landed on the Martian surface on August 6, 2012. Since then it has spent <%= @most_recent %> sols (Martian days) exploring the red planet.
+</p>
+
+<p>
+  Enter a Martian sol between 0 and <%= @most_recent %> to browse photos taken on that day.
+</p>
+
+<form action='/sol' method='get'>
+  <input type='text' name='sol' placeholder='Enter a sol'>
+  <input type'submit' value='Submit'>
+</form>
